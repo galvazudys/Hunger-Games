@@ -29,7 +29,7 @@ function fetchData(val) {
         ulNode.innerHTML = '';
         data = response.data.hits;
         data.forEach(item => {
-            ulNode.innerHTML += `<li id=${item._id} class="collection-item">
+            ulNode.innerHTML += `<li id=${item._id} class="collection-item  animated zoomInDown ">
         ${item.fields.item_name}(${item.fields.brand_name})
         <br>
           <span class="right">
