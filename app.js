@@ -26,10 +26,14 @@ function fetchData(val) {
         }
     }).then(function(response) {
         //handle promise callback
+
         ulNode.innerHTML = '';
         data = response.data.hits;
+        if (data.length === 0) {
+            ulNode.innerHTML = `<div class="card-panel red lighten-3">No Match Found!</div>`;
+        }
         data.forEach(item => {
-            ulNode.innerHTML += `<li id=${item._id} class="collection-item  animated zoomInDown ">
+            ulNode.innerHTML += `<li id=${item._id} class="collection-item animated zoomInDown ">
         ${item.fields.item_name}(${item.fields.brand_name})
         <br>
           <span class="right">
