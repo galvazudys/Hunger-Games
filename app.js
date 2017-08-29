@@ -30,7 +30,7 @@ function fetchData(val) {
         data = response.data.hits;
         data.forEach(item => {
             ulNode.innerHTML += `<li id=${item._id} class="collection-item">
-        ${item.fields.item_name}
+        ${item.fields.item_name}(${item.fields.brand_name})
         <br>
           <span class="right">
             ${item.fields.nf_calories}
