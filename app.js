@@ -28,7 +28,6 @@ function fetchData(val) {
         //handle promise callback
         ulNode.innerHTML = '';
         data = response.data.hits;
-        console.log(data);
         data.forEach(item => {
             ulNode.innerHTML += `<li id=${item._id} class="collection-item">
         ${item.fields.item_name}
@@ -65,6 +64,7 @@ caloriesOutput.addEventListener('click', function(e) {
     }
 });
 
+//render List of New products
 function renderList(value) {
     totalCal = 0;
     value.forEach((item, index) => {
