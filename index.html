@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display" rel="stylesheet">
+    <link rel="stylesheet" href="./assests/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assests/materialize/css/materialize.min.css">
+    <title>First App</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="header" class="center-align"><span class="header">Hunger</span> <i class="fa fa-lemon-o"></i> <span class="header">Games</span></h1>
+        <ul id="output"></ul clas>
+        <div id="totalCalories"></div>
+        <div class="input-field col s6">
+            <input onchange="fetchData(this.value)" placeholder="Enter Food" id="food" type="text" class="validate">
+            <label for="food">Search...</label>
+        </div>
+        <div>
+            <h5><em>Select To Add....</em> </h5>
+        </div>
+        <div id="app"></div>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="./assests/materialize/js/materialize.min.js" charset="utf-8"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="text/javascript" src="./app.js">
+    </script>
+</body>
+
+</html>

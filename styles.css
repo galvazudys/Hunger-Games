@@ -1,0 +1,56 @@
+.input-field {
+    padding: 20px;
+}
+.collection
+li.collection-item {
+    background: #cdffe9;
+    padding-bottom: 30px;
+    cursor: pointer;
+}
+
+.collection
+li.collection-item:hover {
+    background: linear-gradient(to bottom, #35a6ff, #2196f3);
+    /*background-color: #2196f3;*/
+}
+body {
+    background: linear-gradient(
+        to bottom,
+        #b3dced 0%,
+        #29b8e5 50%,
+        #bce0ee 100%
+    );
+}
+html,
+body {
+    height: 100%;
+}
+.container {
+    background: #cdffe9;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.header {
+    font-family: 'Sedgwick Ave Display', cursive;
+    letter-spacing: 20px;
+}
+#header {
+    padding-top: 15%;
+    padding-bottom: 10%;
+}
+.fa-times {
+    color: #514f4f;
+}
+span
+i.fa-times {
+    cursor: pointer;
+}
+.fa-lemon-o {
+    color: #ffb40f;
+}
+.calories-out {
+    font-weight: 900;
+}
+#totalCalories {
+    padding-bottom: 50px;
+}
